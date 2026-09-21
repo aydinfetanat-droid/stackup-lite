@@ -1,6 +1,6 @@
 import streamlit as st
 st.set_page_config(page_title="StackUp Lite", page_icon="💰"
-page = st.sidebar.radio ("Go to, ["Home","About"])
+page = st.sidebar.radio ("Go to", ["Home","About"])
 if page == home:
   st.title("StackUp Lite") 
   st.write("Financial literacy for teens, one tier at a time")
