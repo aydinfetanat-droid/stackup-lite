@@ -8,4 +8,4 @@ if page == "home":
     st.write("Lessons arrive in the next build session")
 else:
   st.title ("About StackUp")
-  st.write ("Stackup teaches teens real money skills through a tiered corriculum")
+  st.write ("Stackup teaches teens real money skills through a tiered curriculum")
