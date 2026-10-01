@@ -7,11 +7,11 @@ lessons = [
 ]
 page = st.sidebar.radio("Go to", ["Home", "Learn", "About"])
 if page == "Home":
-  st.title("StackUp Lite") 
-  st.write("Financial literacy for teens, one tier at a time")
-  if st.button("Start Learning"):
-    st.write("Lessons arrive in the next build session")
-    elif page == "Learn":
+    st.title("StackUp Lite")
+    st.write("Financial literacy for teens, one tier at a time")
+    if st.button("Start Learning"):
+        st.write("Open Learn in the sidebar to start your first lesson")
+elif page == "Learn":
     st.title("Learn")
     titles = []
     for lesson in lessons:
@@ -22,6 +22,6 @@ if page == "Home":
             st.header(lesson["title"])
             st.write(lesson["content"])
 else:
-  st.title ("About StackUp")
-  st.write ("StackUp teaches teens real money skills through a tiered curriculum")
+    st.title("About StackUp")
+    st.write("StackUp teaches teens real money skills through a tiered curriculum")
 
