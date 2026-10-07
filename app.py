@@ -12,7 +12,7 @@ lessons = [
             },
             {
                 "question": "Which example represents money in a bank account?",
-                "options": ["A $20 bill in your wallet", "A receipt from a store", "A balance shown by your bank"],
+                "options": ["A \\$20 bill in your wallet", "A receipt from a store", "A balance shown by your bank"],
                 "answer": "A balance shown by your bank",
             },
             {
@@ -34,26 +34,26 @@ lessons = [
     },
     {
         "title": "Needs vs Wants",
-        "content": "Jordan just got $60 for his birthday. He needs new shoes because his current ones are falling apart, but he also really wants a new video game that costs $60. Jordan finds a pair of shoes that works for him for $40, leaving him with $20. If Jordan had bought the game first, he wouldn’t have had enough money left for the shoes he needed.\n\nNeeds are things you require for everyday life, such as food, water, housing, and basic clothing. Wants are things you would enjoy having but can live without, such as video games, expensive headphones, or eating out.\n\nBut sometimes the line between a need and a want isn’t so clear. Jordan needs shoes, but does he need $150 designer shoes? The shoes themselves are a need, while the expensive brand is a want. Understanding the difference can help you take care of your needs while making smarter choices about your wants.",
+        "content": "Jordan just got \\$60 for his birthday. He needs new shoes because his current ones are falling apart, but he also really wants a new video game that costs \\$60. Jordan finds a pair of shoes that works for him for \\$40, leaving him with \\$20. If Jordan had bought the game first, he wouldn’t have had enough money left for the shoes he needed.\n\nNeeds are things you require for everyday life, such as food, water, housing, and basic clothing. Wants are things you would enjoy having but can live without, such as video games, expensive headphones, or eating out.\n\nBut sometimes the line between a need and a want isn’t so clear. Jordan needs shoes, but does he need \\$150 designer shoes? The shoes themselves are a need, while the expensive brand is a want. Understanding the difference can help you take care of your needs while making smarter choices about your wants.",
         "tip": "Pay for your needs first, then use what’s left for your wants. Before buying something you want, make sure you have enough money for the things you actually need.",
         "quiz": [
             {
-                "question": "What should Jordan prioritize when deciding how to spend his $60?",
-                "options": ["Buying the video game because it costs exactly $60", "Buying the most expensive shoes because they are more useful", "Buying the shoes because they are a need"],
+                "question": "What should Jordan prioritize when deciding how to spend his \\$60?",
+                "options": ["Buying the video game because it costs exactly \\$60", "Buying the most expensive shoes because they are more useful", "Buying the shoes because they are a need"],
                 "answer": "Buying the shoes because they are a need",
             },
             {
-                "question": "Why could $150 designer shoes be considered partly a want?",
-                "options": ["Because all shoes that cost more than $100 are wants", "Because Jordan does not need shoes at all", "Because Jordan needs shoes, but does not need the expensive brand"],
+                "question": "Why could \\$150 designer shoes be considered partly a want?",
+                "options": ["Because all shoes that cost more than \\$100 are wants", "Because Jordan does not need shoes at all", "Because Jordan needs shoes, but does not need the expensive brand"],
                 "answer": "Because Jordan needs shoes, but does not need the expensive brand",
             },
             {
-                "question": "Sort it: Jordan buys a $60 video game because he really wants to play it.",
+                "question": "Sort it: Jordan buys a \\$60 video game because he really wants to play it.",
                 "options": ["Need", "Want"],
                 "answer": "Want",
             },
             {
-                "question": "Sort it: Jordan's shoes are falling apart, so he buys a basic pair for $40.",
+                "question": "Sort it: Jordan's shoes are falling apart, so he buys a basic pair for \\$40.",
                 "options": ["Need", "Want"],
                 "answer": "Need",
             },
