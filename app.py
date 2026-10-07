@@ -33,7 +33,6 @@ lessons = [
         ],
     },
     {
-           {
         "title": "Needs vs Wants",
         "content": "Jordan just got $60 for his birthday. He needs new shoes because his current ones are falling apart, but he also really wants a new video game that costs $60. Jordan finds a pair of shoes that works for him for $40, leaving him with $20. If Jordan had bought the game first, he wouldn’t have had enough money left for the shoes he needed.\n\nNeeds are things you require for everyday life, such as food, water, housing, and basic clothing. Wants are things you would enjoy having but can live without, such as video games, expensive headphones, or eating out.\n\nBut sometimes the line between a need and a want isn’t so clear. Jordan needs shoes, but does he need $150 designer shoes? The shoes themselves are a need, while the expensive brand is a want. Understanding the difference can help you take care of your needs while making smarter choices about your wants.",
         "tip": "Pay for your needs first, then use what’s left for your wants. Before buying something you want, make sure you have enough money for the things you actually need.",
@@ -71,7 +70,6 @@ lessons = [
         "quiz": [],
     },
 ]
-    # Needs vs Wants and Saving Basics follow the same pattern
 page = st.sidebar.radio("Go to", ["Home", "Learn", "About"])
 if page == "Home":
     st.title("StackUp Lite")
