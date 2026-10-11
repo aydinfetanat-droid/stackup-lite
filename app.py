@@ -4,6 +4,7 @@ lessons = [
     {
         "title": "What Money Is",
         "content": "Money is a tool we use to buy goods and services and pay for things we need. It can come in different forms, like cash, coins, or money in a bank account. Understanding how money works helps you make smarter choices with what you earn, spend, and save.",
+                "audio": "audio/what-money-is.m4a",
         "quiz": [
             {
                 "question": "Which statement best explains the role of money?",
@@ -36,6 +37,7 @@ lessons = [
         "title": "Needs vs Wants",
         "content": "Jordan just got \\$60 for his birthday. He needs new shoes because his current ones are falling apart, but he also really wants a new video game that costs \\$60. Jordan finds a pair of shoes that works for him for \\$40, leaving him with \\$20. If Jordan had bought the game first, he wouldn’t have had enough money left for the shoes he needed.\n\nNeeds are things you require for everyday life, such as food, water, housing, and basic clothing. Wants are things you would enjoy having but can live without, such as video games, expensive headphones, or eating out.\n\nBut sometimes the line between a need and a want isn’t so clear. Jordan needs shoes, but does he need \\$150 designer shoes? The shoes themselves are a need, while the expensive brand is a want. Understanding the difference can help you take care of your needs while making smarter choices about your wants.",
         "tip": "Pay for your needs first, then use what’s left for your wants. Before buying something you want, make sure you have enough money for the things you actually need.",
+                "audio": "audio/needs-vs-wants.m4a",
         "quiz": [
             {
                 "question": "What should Jordan prioritize when deciding how to spend his \\$60?",
@@ -67,6 +69,7 @@ lessons = [
     {
         "title": "Saving Basics",
         "content": "Saving means putting money aside instead of spending it right away. Even small amounts can add up over time and help you afford future goals or handle unexpected expenses. A good habit is to save part of the money you receive before spending the rest.",
+                "audio": "audio/saving-basics.m4a",
         "quiz": [],
     },
 ]
@@ -86,6 +89,8 @@ elif page == "Learn":
         if lesson["title"] == choice:
             st.header(lesson["title"])
             st.write(lesson["content"])
+                        if "audio" in lesson:
+                st.audio(lesson["audio"], format="audio/mp4")
             if len(lesson["quiz"]) > 0:
                 st.subheader("Quiz")
                 answers = []
