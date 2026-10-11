@@ -3,7 +3,11 @@ st.set_page_config(page_title="StackUp Lite", page_icon="💰")
 lessons = [
     {
         "title": "What Money Is",
-        "content": "Money is a tool we use to buy goods and services and pay for things we need. It can come in different forms, like cash, coins, or money in a bank account. Understanding how money works helps you make smarter choices with what you earn, spend, and save.",
+        "content": "Maya earns \\$25 each week babysitting her neighbor’s kids. This week, she spends \\$8 on lunch and puts \\$17 into her bank account. Her money comes in different forms: the cash her neighbor pays her, the coins in her jar, and the balance in her bank account. She knows that money can be used to buy goods and services, but she also knows that every dollar she spends is a dollar she cannot use for something else.
+Money is a tool that helps Maya make choices about what she needs, what she wants, and what she wants to save for later. But the choice is not always obvious. Maya could spend her \\$17 on a new game she has been wanting, or she could keep it in her account and get closer to her goal of buying a \\$60 pair of headphones.
+Before spending money, Maya asks herself: “Is this the best use of my money right now?”
+”
+",
                 "audio": "audio/What-money-is.m4a",
         "quiz": [
             {
@@ -68,7 +72,10 @@ lessons = [
     },
     {
         "title": "Saving Basics",
-        "content": "Saving means putting money aside instead of spending it right away. Even small amounts can add up over time and help you afford future goals or handle unexpected expenses. A good habit is to save part of the money you receive before spending the rest.",
+        "content": "Maya still wants the \\$60 headphones. She already has \\$17 in her bank account, and she earns \\$25 each week babysitting. Instead of spending the entire $25, she puts \\$15 into her savings account and keeps \\$10 available for other things. After three more weeks of saving \\$15, she has \\$62, enough for the headphones, without giving up all of her spending money.
+Saving means choosing to keep some money for the future instead of spending it right away. Even small amounts can add up over time, but saving does not always mean refusing to spend. Maya could save too much and miss out on something useful today, or she could spend too much and have nothing left when she needs it.
+Before spending, Maya asks herself: “Would I rather have this money now, or would saving it help me more later?”
+",
                 "audio": "audio/Saving-basics.m4a",
         "quiz": [],
     },
