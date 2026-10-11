@@ -3,8 +3,7 @@ st.set_page_config(page_title="StackUp Lite", page_icon="💰")
 lessons = [
     {
         "title": "What Money Is",
-        "content": "Maya earns \\$25 each week babysitting her neighbor’s kids. This week, she spends \\$8 on lunch and puts \\$17 into her bank account. Her money comes in different forms: the cash her neighbor pays her, the coins in her jar, and the balance in her bank account. She knows that money can be used to buy goods and services, but she also knows that every dollar she spends is a dollar she cannot use for something else.\n\nMoney is a tool that helps Maya make choices about what she needs, what she wants, and what she wants to save for later. But the choice is not always obvious. Maya could spend her \\$17 on a new game she has been wanting, or she could keep it in her account and get closer to her goal of buying a \\$60 pair of headphones.\n\nBefore spending money, Maya asks herself: Is this the best use of my money right now?
-”
+        "content": "Maya earns \\$25 each week babysitting her neighbor’s kids. This week, she spends \\$8 on lunch and puts \\$17 into her bank account. Her money comes in different forms: the cash her neighbor pays her, the coins in her jar, and the balance in her bank account. She knows that money can be used to buy goods and services, but she also knows that every dollar she spends is a dollar she cannot use for something else.\n\nMoney is a tool that helps Maya make choices about what she needs, what she wants, and what she wants to save for later. But the choice is not always obvious. Maya could spend her \\$17 on a new game she has been wanting, or she could keep it in her account and get closer to her goal of buying a \\$60 pair of headphones.\n\nBefore spending money, Maya asks herself: “Is this the best use of my money right now?”",
 ",
                 "audio": "audio/What-money-is.m4a",
         "quiz": [
