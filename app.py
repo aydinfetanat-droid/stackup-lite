@@ -89,7 +89,7 @@ elif page == "Learn":
         if lesson["title"] == choice:
             st.header(lesson["title"])
             st.write(lesson["content"])
-                        if "audio" in lesson:
+            if "audio" in lesson:
                 st.audio(lesson["audio"], format="audio/mp4")
             if len(lesson["quiz"]) > 0:
                 st.subheader("Quiz")
