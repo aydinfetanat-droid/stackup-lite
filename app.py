@@ -70,7 +70,33 @@ lessons = [
         "title": "Saving Basics",
         "content": "Maya still wants the \\$60 headphones. She already has \\$17 in her bank account, and she earns \\$25 each week babysitting. Instead of spending the entire \\$25, she puts \\$15 into her savings account and keeps \\$10 available for other things. After three more weeks of saving \\$15, she has \\$62, enough for the headphones, without giving up all of her spending money.\n\nSaving means choosing to keep some money for the future instead of spending it right away. Even small amounts can add up over time, but saving does not always mean refusing to spend. Maya could save too much and miss out on something useful today, or she could spend too much and have nothing left when she needs it.\n\nBefore spending, Maya asks herself: “Would I rather have this money now, or would saving it help me more later?”",
                 "audio": "audio/Saving-basics.m4a",
-        "quiz": [],
+                "quiz": [
+            {
+                "question": "What is the main benefit of Maya saving \\$15 each week?",
+                "options": ["She can buy the headphones while keeping some money available for other things.", "She can spend all her money now without worrying about future expenses.", "She can avoid spending money on anything she wants until she earns more."],
+                "answer": "She can buy the headphones while keeping some money available for other things.",
+            },
+            {
+                "question": "How much money does Maya have after saving \\$15 for three more weeks?",
+                "options": ["\\$57", "\\$62", "\\$45"],
+                "answer": "\\$62",
+            },
+            {
+                "question": "What does saving mean?",
+                "options": ["Keeping all your money and never spending it on wants.", "Spending money now before deciding what you might need later.", "Keeping some money for the future instead of spending it right away."],
+                "answer": "Keeping some money for the future instead of spending it right away.",
+            },
+            {
+                "question": "What could happen if Maya saves too much money?",
+                "options": ["She might miss out on something useful that she needs today.", "She will always have enough money for every future expense.", "She will automatically earn more money each week."],
+                "answer": "She might miss out on something useful that she needs today.",
+            },
+            {
+                "question": "What question should Maya ask herself before spending money?",
+                "options": ["Can I spend all my money now and earn it back later?", "Would spending this money now help me more than saving it for later?", "Should I stop spending money until I can afford everything I want?"],
+                "answer": "Would spending this money now help me more than saving it for later?",
+            },
+        ],
     },
 ]
 page = st.sidebar.radio("Go to", ["Home", "Learn", "About"])
