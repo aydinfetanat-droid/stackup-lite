@@ -143,7 +143,7 @@ elif page == "Learn":
 else:
     st.title("About StackUp")
     st.write("StackUp teaches teens real money skills through a tiered curriculum")
-    done = len(st.session_state["completed"])
+done = len(st.session_state["completed"])
 total = len(lessons)
 fraction = done / total
 st.sidebar.progress(fraction)
