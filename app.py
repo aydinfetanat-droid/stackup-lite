@@ -99,6 +99,8 @@ lessons = [
         ],
     },
 ]
+if "completed" not in st.session_state:
+    st.session_state["completed"] = []
 page = st.sidebar.radio("Go to", ["Home", "Learn", "About"])
 if page == "Home":
     st.title("StackUp Lite")
@@ -133,6 +135,9 @@ elif page == "Learn":
                         else:
                             st.error("Question " + str(i + 1) + ": the answer is " + q["answer"])
                     st.write("You got " + str(score) + " out of " + str(len(lesson["quiz"])) + ".")
+                    if score == len(lesson["quiz"]):
+                        if lesson["title"] not in st.session_state["completed"]:
+                            st.session_state["completed"].append(lesson["title"])
             else:
                 st.write("Quiz coming soon.")
 else:
