@@ -105,10 +105,13 @@ lessons = [
 if "completed" not in st.session_state:
     st.session_state["completed"] = []
 def tier_done(tier_name):
+    count = 0
     for lesson in lessons:
-        if lesson["tier"]== tier_name and lesson["title"] not in st.session_state["completed"]:
-            return False
-    return True
+        if lesson["tier"] == tier_name:
+            count = count + 1
+            if lesson["title"] not in st.session_state["completed"]:
+                return False
+    return count > 0
 unlocked = ["Analyst"]
 if tier_done("Analyst"):
     unlocked.append("Vice President")
