@@ -122,11 +122,10 @@ if page == "Home":
         st.write("Open Learn in the sidebar to start your first lesson")
 elif page == "Learn":
     st.title("Learn")
-        tier_choice = st.selectbox("Choose a tier", unlocked)
     tier_choice = st.selectbox("Choose a tier", unlocked)
     titles = []
     for lesson in lessons:
-        if lesson["tier"] == ________:
+        if lesson["tier"] == tier_choice:
             titles.append(lesson["title"])
     choice = st.selectbox("Choose a lesson", titles)
     for lesson in lessons:
