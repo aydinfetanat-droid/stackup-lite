@@ -106,7 +106,7 @@ if "completed" not in st.session_state:
     st.session_state["completed"] = []
 def tier_done(tier_name):
     for lesson in lessons:
-        if lesson["tier"]== tier_name and lesson["title"] not in st.session_state["completed"]
+        if lesson["tier"]== tier_name and lesson["title"] not in st.session_state["completed"]:
             return False
     return True
 unlocked = ["Analyst"]
