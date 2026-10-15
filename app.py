@@ -3,6 +3,7 @@ st.set_page_config(page_title="StackUp Lite", page_icon="💰")
 lessons = [
     {
         "title": "What Money Is",
+        "tier": "Analyst",
         "content": "Maya earns \\$25 each week babysitting her neighbor’s kids. This week, she spends \\$8 on lunch and puts \\$17 into her bank account. Her money comes in different forms: the cash her neighbor pays her, the coins in her jar, and the balance in her bank account. She knows that money can be used to buy goods and services, but she also knows that every dollar she spends is a dollar she cannot use for something else.\n\nMoney is a tool that helps Maya make choices about what she needs, what she wants, and what she wants to save for later. But the choice is not always obvious. Maya could spend her \\$17 on a new game she has been wanting, or she could keep it in her account and get closer to her goal of buying a \\$60 pair of headphones.\n\nBefore spending money, Maya asks herself: “Is this the best use of my money right now?”",
                 "audio": "audio/What-money-is.m4a",
         "quiz": [
@@ -35,6 +36,7 @@ lessons = [
     },
     {
         "title": "Needs vs Wants",
+        "tier": "Analyst",
         "content": "Jordan just got \\$60 for his birthday. He needs new shoes because his current ones are falling apart, but he also really wants a new video game that costs \\$60. Jordan finds a pair of shoes that works for him for \\$40, leaving him with \\$20. If Jordan had bought the game first, he wouldn’t have had enough money left for the shoes he needed.\n\nNeeds are things you require for everyday life, such as food, water, housing, and basic clothing. Wants are things you would enjoy having but can live without, such as video games, expensive headphones, or eating out.\n\nBut sometimes the line between a need and a want isn’t so clear. Jordan needs shoes, but does he need \\$150 designer shoes? The shoes themselves are a need, while the expensive brand is a want. Understanding the difference can help you take care of your needs while making smarter choices about your wants.",
         "tip": "Pay for your needs first, then use what’s left for your wants. Before buying something you want, make sure you have enough money for the things you actually need.",
                 "audio": "audio/Needs-vs-wants.m4a",
@@ -68,6 +70,7 @@ lessons = [
     },
     {
         "title": "Saving Basics",
+        "tier": "Analyst",
         "content": "Maya still wants the \\$60 headphones. She already has \\$17 in her bank account, and she earns \\$25 each week babysitting. Instead of spending the entire \\$25, she puts \\$15 into her savings account and keeps \\$10 available for other things. After three more weeks of saving \\$15, she has \\$62, enough for the headphones, without giving up all of her spending money.\n\nSaving means choosing to keep some money for the future instead of spending it right away. Even small amounts can add up over time, but saving does not always mean refusing to spend. Maya could save too much and miss out on something useful today, or she could spend too much and have nothing left when she needs it.\n\nBefore spending, Maya asks herself: “Would I rather have this money now, or would saving it help me more later?”",
                 "audio": "audio/Saving-basics.m4a",
                 "quiz": [
@@ -99,8 +102,18 @@ lessons = [
         ],
     },
 ]
-if "completed" not in st.session_state:
+if "completed" not in st.session_state:x
     st.session_state["completed"] = []
+def tier_done(tier_name):
+    for lesson in lessons:
+        if lesson["tier"]== tier_name and lesson["title"] not in st.session_state["completed"]
+            return False
+        return True
+unlocked = ["Analyst"]
+if tier_done("Analyst"):
+    unlocked.append("Vice President")
+if tier_done("Vice President"):
+    unlocked.append("Managing Director")
 page = st.sidebar.radio("Go to", ["Home", "Learn", "About"])
 if page == "Home":
     st.title("StackUp Lite")
@@ -109,9 +122,12 @@ if page == "Home":
         st.write("Open Learn in the sidebar to start your first lesson")
 elif page == "Learn":
     st.title("Learn")
+        tier_choice = st.selectbox("Choose a tier", unlocked)
+    tier_choice = st.selectbox("Choose a tier", unlocked)
     titles = []
     for lesson in lessons:
-        titles.append(lesson["title"])
+        if lesson["tier"] == ________:
+            titles.append(lesson["title"])
     choice = st.selectbox("Choose a lesson", titles)
     for lesson in lessons:
         if lesson["title"] == choice:
@@ -147,5 +163,5 @@ done = len(st.session_state["completed"])
 total = len(lessons)
 fraction = done / total
 st.sidebar.progress(fraction)
-st.sidebar.write("Intern: " + str(done) + " of " + str(total) + " lessons")
+st.sidebar.write("Progress: " + str(done) + " of " + str(total) + " lessons")
 
