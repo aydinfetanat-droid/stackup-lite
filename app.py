@@ -217,6 +217,9 @@ if tier_done("Analyst"):
 if tier_done("Vice President"):
     unlocked.append("Managing Director")
 page = st.sidebar.radio("Go to", ["Home", "Learn", "About"])
+demo = st.sidebar.checkbox("Demo mode: unlock all tiers")
+if demo:
+    unlocked = ["Analyst", "Vice President", "Managing Director"]
 if page == "Home":
     st.title("StackUp Lite")
     st.write("Financial literacy for teens, one tier at a time")
