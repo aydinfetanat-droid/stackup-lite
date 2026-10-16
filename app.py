@@ -101,6 +101,105 @@ lessons = [
             },
         ],
     },
+    {
+        "title": "Budgeting with 50/30/20",
+        "tier": "Vice President",
+        "content": "Ava takes home \\$200 from her weekend job and wants to manage it wisely. She tries the 50/30/20 budgeting guideline: \\$100 for needs, \\$60 for wants, and \\$40 for savings or extra debt payments. She plans to use the \\$100 for transportation and basic meals, the \\$60 for movies and other fun activities, and the \\$40 for her savings account. This gives every dollar a purpose while still leaving room for things she enjoys.\n\nBut Ava discovers that her transportation and food expenses will cost \\$110 this month instead of \\$100. Rather than abandoning her budget, she adjusts it to \\$110 for needs, \\$50 for wants, and \\$40 for savings. Her total is still \\$200, and she has protected her essential expenses without giving up saving entirely.\n\n“Should a budget follow a perfect formula, or should it change when real life changes?”",
+        "tip": "Use the 50/30/20 guideline as a starting point: on \\$200, plan \\$100 for needs, \\$60 for wants, and \\$40 for savings or extra debt payments, then adjust when your real expenses require it.",
+        "quiz": [
+            {
+                "question": "Ava takes home \\$200 and follows the 50/30/20 guideline. How should she initially divide her money?",
+                "options": ["\\$100 for needs, \\$60 for wants, and \\$40 for savings or extra debt payments", "\\$100 for needs, \\$40 for wants, and \\$60 for savings or extra debt payments", "\\$120 for needs, \\$40 for wants, and \\$40 for savings or extra debt payments"],
+                "answer": "\\$100 for needs, \\$60 for wants, and \\$40 for savings or extra debt payments",
+            },
+            {
+                "question": "Ava's needs rise from \\$100 to \\$110. Which adjustment did she make so she could keep saving \\$40 and keep her total at \\$200?",
+                "options": ["Increase needs to \\$110, keep wants at \\$60, and reduce savings to \\$30", "Increase needs to \\$110, reduce wants to \\$50, and keep savings at \\$40", "Increase needs to \\$120, reduce wants to \\$40, and keep savings at \\$40"],
+                "answer": "Increase needs to \\$110, reduce wants to \\$50, and keep savings at \\$40",
+            },
+            {
+                "question": "Why is the 50/30/20 method considered a guideline rather than a strict rule?",
+                "options": ["Everyone should spend the same percentage on wants regardless of income", "Saving should only happen when all wants have already been purchased", "Actual expenses and financial priorities can change how money should be divided"],
+                "answer": "Actual expenses and financial priorities can change how money should be divided",
+            },
+            {
+                "question": "Which expense would generally fit into Ava's wants category?",
+                "options": ["Basic meals she needs throughout the week", "A movie ticket she buys for entertainment", "Transportation she needs to get to school"],
+                "answer": "A movie ticket she buys for entertainment",
+            },
+            {
+                "question": "What is the main purpose of creating a budget?",
+                "options": ["To plan spending, cover important expenses, and make progress toward financial goals", "To avoid spending money on wants until every possible future expense is covered", "To make sure every month uses exactly the same spending amounts and percentages"],
+                "answer": "To plan spending, cover important expenses, and make progress toward financial goals",
+            },
+        ],
+    },
+    {
+        "title": "Banks and Interest",
+        "tier": "Vice President",
+        "content": "Noah has \\$500 saved from his summer job. He keeps \\$150 in his checking account for everyday purchases and places \\$350 in a savings account for a future laptop. He learns that checking accounts are generally designed for regular transactions, while savings accounts help him set money aside. His bank also pays interest on his savings. At an annual interest rate of 2%, for example, his unchanged \\$350 balance would earn roughly \\$7 over one year, before taxes.\n\nNoah initially thinks the account with the highest interest rate must be the best choice. However, he notices that another account charges a \\$4 monthly fee under certain balance conditions. That fee could total \\$48 over a year, potentially wiping out the benefit of earning more interest. He also learns that eligible deposits at FDIC-insured banks are generally insured up to \\$250,000 per depositor, per bank, per ownership category, while federally insured credit unions have NCUA share insurance.\n\n“Should Noah choose a bank based only on interest, or consider the fees and protections too?”",
+        "tip": "Compare a bank account's interest, fees, access, and federal insurance coverage before deciding where to keep your money.",
+        "quiz": [
+            {
+                "question": "What is the main purpose of a checking account?",
+                "options": ["To hold money for several years without making regular transactions", "To manage everyday spending, payments, and deposits", "To earn the highest possible interest on money you will not need soon"],
+                "answer": "To manage everyday spending, payments, and deposits",
+            },
+            {
+                "question": "If Noah keeps \\$350 in savings for one year at an annual interest rate of 2%, for example, approximately how much interest would he earn if the balance stays unchanged?",
+                "options": ["\\$7", "\\$14", "\\$35"],
+                "answer": "\\$7",
+            },
+            {
+                "question": "What does interest generally represent in a savings account?",
+                "options": ["A monthly charge for keeping money at a financial institution", "A guaranteed increase in savings regardless of the account's terms", "Money the financial institution pays for the use of deposited funds"],
+                "answer": "Money the financial institution pays for the use of deposited funds",
+            },
+            {
+                "question": "Which statement correctly describes deposit insurance?",
+                "options": ["The FDIC insures every investment purchased through a bank up to \\$250,000", "The NCUA and FDIC insure all money held at any financial institution, regardless of its status", "The FDIC protects eligible deposits at insured banks, while the NCUA protects eligible deposits at federally insured credit unions"],
+                "answer": "The FDIC protects eligible deposits at insured banks, while the NCUA protects eligible deposits at federally insured credit unions",
+            },
+            {
+                "question": "Why should Noah compare account fees as well as interest rates?",
+                "options": ["Fees can reduce or outweigh the interest an account earns", "Fees always increase when an account pays more interest", "Interest rates matter only when the account has a monthly fee"],
+                "answer": "Fees can reduce or outweigh the interest an account earns",
+            },
+        ],
+    },
+    {
+        "title": "Credit and Debt",
+        "tier": "Vice President",
+        "content": "Kira has \\$300 in her checking account that she is saving for upcoming expenses. She also wants headphones that cost \\$300. She could use her debit card, which takes money directly from her bank account, or a credit card, which lets her borrow money and repay it later. Kira chooses credit because the card only requires a \\$15 minimum payment each month. The card has an annual percentage rate (APR) of 24%, for example, meaning interest may be charged if she carries a balance.\n\nWhen her bill arrives, Kira realizes that the \\$15 minimum is not the full cost of the headphones. Paying only the minimum can make repayment take much longer and increase the total amount she pays. If her card offers a purchase grace period, paying the full statement balance by the due date can help her avoid interest on eligible purchases. She also learns that payment history has a major impact on many credit scores.\n\nKira hears a rule of thumb from Tim Metcalf, financial advisor: “Don't pay interest except for real estate.” However, this is not a universal rule; some student loans used to finance a degree may be worthwhile depending on their costs and the borrower's future plans.\n\n“Is borrowing always a bad choice, or does the cost and purpose of the debt matter?”",
+        "tip": "Avoid unnecessary interest and try to pay more than the minimum. One advisor's rule of thumb, from Tim Metcalf, financial advisor: “Don't pay interest except for real estate,” although education loans may sometimes be worth considering.",
+        "quiz": [
+            {
+                "question": "What is the main difference between a debit card and a credit card?",
+                "options": ["A debit card uses money from your bank account, while a credit card lets you borrow money and repay it later", "A debit card lets you borrow money, while a credit card immediately withdraws money from checking", "A debit card and a credit card both withdraw money directly from your bank account at purchase"],
+                "answer": "A debit card uses money from your bank account, while a credit card lets you borrow money and repay it later",
+            },
+            {
+                "question": "What does a credit card's APR of 24%, for example, tell Kira?",
+                "options": ["She must pay exactly 24% of the purchase price as a one-time fee", "It is an annual borrowing rate that can affect the cost of carrying a balance", "She will pay 24% interest on every purchase even when she qualifies for a grace period and pays in full"],
+                "answer": "It is an annual borrowing rate that can affect the cost of carrying a balance",
+            },
+            {
+                "question": "Why can paying only the minimum payment become a problem?",
+                "options": ["It automatically causes a late payment on the next billing cycle", "It prevents the borrower from making any additional payments", "It can leave a balance that takes longer to repay and may accumulate more interest"],
+                "answer": "It can leave a balance that takes longer to repay and may accumulate more interest",
+            },
+            {
+                "question": "Which action generally has the greatest impact on building a strong credit score?",
+                "options": ["Making loan and credit payments on time, every time", "Applying for several credit cards within a short period", "Keeping a balance on every credit card from month to month"],
+                "answer": "Making loan and credit payments on time, every time",
+            },
+            {
+                "question": "What is the most reasonable way to interpret the advisor's rule of thumb about paying interest?",
+                "options": ["All forms of borrowing are harmful, regardless of their purpose or cost", "Borrowing for real estate is always beneficial, regardless of the interest rate", "Avoid unnecessary interest, but consider the purpose, cost, and repayment plan before deciding whether certain debt is worthwhile"],
+                "answer": "Avoid unnecessary interest, but consider the purpose, cost, and repayment plan before deciding whether certain debt is worthwhile",
+            },
+        ],
+    },
 ]
 if "completed" not in st.session_state:
     st.session_state["completed"] = []
