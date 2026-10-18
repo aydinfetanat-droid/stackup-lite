@@ -200,6 +200,105 @@ lessons = [
             },
         ],
     },
+    {
+        "title": "Compound Growth",
+        "tier": "Managing Director",
+        "content": "Jordan starts with \\$1,000 in a hypothetical investment and learns how compound growth works. He uses a 10% annual growth rate for easy math and assumes he reinvests every gain. After the first year, his \\$1,000 becomes \\$1,100. In the second year, he earns 10% of \\$1,100, bringing his balance to \\$1,210. In the third year, he earns \\$121, reaching \\$1,331. His money grows because each year's gains can earn additional gains in later years. He also learns the Rule of 72: dividing 72 by 10 means his money could double in about 7.2 years if it grew at a steady 10% rate.\n\nJordan is excited and thinks he can count on this growth every year. However, he discovers that investment returns change, and some years can bring losses. The 10% rate is just a convenient example, and real returns vary from year to year. Starting early gives money more time to compound, but it does not guarantee a profit.\n\n“Is it better to start building good investing habits early, or wait until you have more money?”",
+        "tip": "Tim Metcalf, financial advisor, offers the reminder “Invest early and often,” but remember that 10% is just an easy-math example, real returns vary from year to year, and no return is guaranteed.",
+        "quiz": [
+            {
+                "question": "Jordan starts with \\$1,000 and earns 10% annually, reinvesting his gains; how much does he have after three years?",
+                "options": ["\\$1,331", "\\$1,310", "\\$1,321"],
+                "answer": "\\$1,331",
+            },
+            {
+                "question": "After Jordan's first year, his balance reaches \\$1,100; if it grows another 10% in the second year, what is his new balance?",
+                "options": ["\\$1,200", "\\$1,210", "\\$1,110"],
+                "answer": "\\$1,210",
+            },
+            {
+                "question": "What makes compound growth different from earning money only on the original amount?",
+                "options": ["It adds the same dollar amount every year, regardless of the balance.", "It increases the original amount only when new money is deposited.", "It allows earlier gains to earn additional gains over time."],
+                "answer": "It allows earlier gains to earn additional gains over time.",
+            },
+            {
+                "question": "Why should Jordan avoid assuming his investment will earn 10% every year?",
+                "options": ["Investment returns vary, and an investment can lose value in some years.", "Compound growth stops whenever the balance reaches \\$1,000 in gains.", "Investment accounts always earn less than 10% and cannot earn more."],
+                "answer": "Investment returns vary, and an investment can lose value in some years.",
+            },
+            {
+                "question": "Using the Rule of 72, approximately how long would it take Jordan's money to double at a steady 10% annual growth rate?",
+                "options": ["10.2 years", "7.2 years", "5.2 years"],
+                "answer": "7.2 years",
+            },
+        ],
+    },
+    {
+        "title": "Investing Basics",
+        "tier": "Managing Director",
+        "content": "Maya has \\$300 to use in a classroom investing simulation. She divides the example into three equal amounts of \\$100 to learn about three different investments: a stock, a bond, and a fund. A stock represents a small piece of ownership in a company, so owning shares makes her a partial owner. A bond represents a loan to a company or government, which borrows money and agrees to repay it under the bond's terms. A fund combines multiple investments into one product, allowing investors to own a portion of a collection of assets. Her three \\$100 amounts add up to \\$300, giving her a simple way to compare how different investments work.\n\nAt first, Maya assumes that buying a fund means her money cannot lose value because it holds many investments instead of just one. During the simulation, however, she sees the fund's value fall when several of its investments decline. She learns that funds can spread out risk, but their values can still rise or fall depending on what they hold. Stocks, bonds, and funds all have different risks and potential returns, and none guarantees a profit.\n\n“How can Maya compare investment options without assuming one is automatically safe or better than the others?”",
+        "tip": "Understand what you own before investing: stocks represent ownership, bonds represent loans, and funds hold collections of investments, but none guarantees a return.",
+        "quiz": [
+            {
+                "question": "Maya divides \\$300 equally among three investment categories in her classroom simulation; how much does she assign to each category?",
+                "options": ["\\$100", "\\$150", "\\$75"],
+                "answer": "\\$100",
+            },
+            {
+                "question": "Which statement best explains what owning a stock means?",
+                "options": ["You have loaned money to a company that must repay it under agreed terms.", "You have purchased a collection of investments managed as one product.", "You own a small piece of a company through its shares."],
+                "answer": "You own a small piece of a company through its shares.",
+            },
+            {
+                "question": "What does purchasing a bond generally mean?",
+                "options": ["Buying partial ownership in a company and sharing in its results.", "Lending money to a company or government under agreed terms.", "Buying a collection of different stocks and other investments."],
+                "answer": "Lending money to a company or government under agreed terms.",
+            },
+            {
+                "question": "Maya's fund loses value because several investments inside it decline; what does this demonstrate?",
+                "options": ["A fund can lose value even when it holds multiple investments.", "A fund cannot lose money unless every investment becomes worthless.", "A fund guarantees a profit as long as it owns different companies."],
+                "answer": "A fund can lose value even when it holds multiple investments.",
+            },
+            {
+                "question": "What should Maya understand before comparing different investments?",
+                "options": ["Stocks, bonds, and funds all provide the same level of risk and return.", "Funds always perform better because they contain more than one investment.", "Different investments have different risks, and their returns are not guaranteed."],
+                "answer": "Different investments have different risks, and their returns are not guaranteed.",
+            },
+        ],
+    },
+    {
+        "title": "Risk and Diversification",
+        "tier": "Managing Director",
+        "content": "Ethan has \\$900 set aside for two future goals: \\$300 for a program he expects to pay for in one year and \\$600 for a goal seven years away. In his finance class, he learns that risk is the possibility of losing money and that investments with higher potential returns often involve greater risk. His class compares two simplified examples using the \\$600 intended for the longer-term goal. If the entire amount were in one investment that lost 20% of its value, it would fall to \\$480. If he instead divided the \\$600 equally across six different investments worth \\$100 each, and only one lost 20% while the other five stayed unchanged, the total would be \\$580.\n\nEthan initially believes diversification prevents losses entirely. His teacher explains that spreading investments can reduce the damage caused by one investment performing poorly, but multiple investments can decline together. He also learns that time horizon matters: money needed in one year has less time to recover from a market decline than money intended for a goal seven years away. A longer timeline offers more opportunity to recover, but it does not guarantee a positive return.\n\n“How should investors think about risk when their goals have different deadlines?”",
+        "tip": "Spread investments across different companies and asset types to reduce reliance on any one holding, while remembering that diversification cannot eliminate all losses.",
+        "quiz": [
+            {
+                "question": "In Ethan's classroom example, what would happen to \\$600 invested in one place if its value fell by 20%?",
+                "options": ["It would fall to \\$500.", "It would fall to \\$480.", "It would fall to \\$420."],
+                "answer": "It would fall to \\$480.",
+            },
+            {
+                "question": "Ethan divides \\$600 equally across six investments worth \\$100 each; if one falls by 20% and the other five stay unchanged, what is the combined value?",
+                "options": ["\\$580", "\\$560", "\\$520"],
+                "answer": "\\$580",
+            },
+            {
+                "question": "What is the main purpose of diversification?",
+                "options": ["To guarantee that at least one investment will always make money.", "To ensure every investment earns approximately the same return.", "To reduce reliance on any one investment and potentially limit losses."],
+                "answer": "To reduce reliance on any one investment and potentially limit losses.",
+            },
+            {
+                "question": "Why does Ethan consider the time horizon of his two goals?",
+                "options": ["Investments intended for longer-term goals are guaranteed to earn more money.", "Money needed soon has less time to recover from a potential market decline.", "Money intended for a goal seven years away cannot lose value in the meantime."],
+                "answer": "Money needed soon has less time to recover from a potential market decline.",
+            },
+            {
+                "question": "What does the risk-and-return tradeoff mean?",
+                "options": ["Investments with lower risk always produce the highest long-term returns.", "Investments with higher potential returns cannot lose more money than safer investments.", "Investments with higher potential returns often involve a greater chance of loss."],
+                "answer": "Investments with higher potential returns often involve a greater chance of loss.",
+            },
+        ],
+    },
 ]
 if "completed" not in st.session_state:
     st.session_state["completed"] = []
