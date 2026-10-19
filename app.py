@@ -374,31 +374,36 @@ elif page == "Learn":
     choice = st.selectbox("Choose a lesson", titles)
     for lesson in lessons:
         if lesson["title"] == choice:
-            st.header(lesson["title"])
-            st.write(lesson["content"])
-            if "audio" in lesson:
-                st.audio(lesson["audio"], format="audio/mp4")
+            with st.container(border=True):
+                st.header(lesson["title"])
+                st.caption(lesson["tier"] + " tier")
+                st.write(lesson["content"])
+                if "audio" in lesson:
+                    st.audio(lesson["audio"], format="audio/mp4")
+                if "tip" in lesson:
+                    st.info(lesson["tip"])
             if len(lesson["quiz"]) > 0:
-                st.subheader("Quiz")
-                answers = []
-                for q in lesson["quiz"]:
-                    picked = st.radio(q["question"], q["options"], index=None, key=lesson["title"] + q["question"])
-                    answers.append(picked)
-                if st.button("Check answers"):
-                    score = 0
-                    for i in range(len(lesson["quiz"])):
-                        q = lesson["quiz"][i]
-                        if answers[i] == q["answer"]:
-                            score = score + 1
-                            st.success("Question " + str(i + 1) + ": correct!")
-                        else:
-                            st.error("Question " + str(i + 1) + ": the answer is " + q["answer"])
-                    st.write("You got " + str(score) + " out of " + str(len(lesson["quiz"])) + ".")
-                    if score == len(lesson["quiz"]):
-                        st.balloons()
-                        if lesson["title"] not in st.session_state["completed"]:
-                            st.session_state["completed"].append(lesson["title"])
-                            st.toast("Lesson Complete! Progress Saved.")
+                with st.container(border=True):
+                    st.subheader("Quiz")
+                    answers = []
+                    for q in lesson["quiz"]:
+                        picked = st.radio(q["question"], q["options"], index=None, key=lesson["title"] + q["question"])
+                        answers.append(picked)
+                    if st.button("Check answers", type="primary"):
+                        score = 0
+                        for i in range(len(lesson["quiz"])):
+                            q = lesson["quiz"][i]
+                            if answers[i] == q["answer"]:
+                                score = score + 1
+                                st.success("Question " + str(i + 1) + ": correct!")
+                            else:
+                                st.error("Question " + str(i + 1) + ": the answer is " + q["answer"])
+                        st.write("You got " + str(score) + " out of " + str(len(lesson["quiz"])) + ".")
+                        if score == len(lesson["quiz"]):
+                            st.balloons()
+                            if lesson["title"] not in st.session_state["completed"]:
+                                st.session_state["completed"].append(lesson["title"])
+                                st.toast("Lesson Complete! Progress Saved.")
             else:
                 st.write("Quiz coming soon.")
 else:
