@@ -403,7 +403,16 @@ elif page == "Learn":
                 st.write("Quiz coming soon.")
 else:
     st.title("About StackUp")
-    st.write("StackUp teaches teens real money skills through a tiered curriculum")
+    with st.container(border=True):
+        st.subheader("The problem")
+        st.write("Financial literacy is a huge problem in today’s world, especially among kids. Kids are expected to know how to file their taxes, build their credit, and manage investments straight out of high school, and that’s a problem.")
+    with st.container(border=True):
+        st.subheader("How it works")
+        st.write("My app is designed to be a learning tool for kids who want to develop financial skills. I understand that learning about finance can feel boring, so StackUp makes it quick and captivating. Every lesson is a short story with real numbers, a quiz, and narration, and finishing a tier unlocks the next one.")
+    with st.container(border=True):
+        st.subheader("Who built it")
+        st.write("I’m Aydin, the founder of StackUp. I built this app because one day I asked my dad, “What does credit mean?” and I did not understand a word of his explanation. I thought to myself, there is no way it should be this hard to build simple financial skills. That is why I built StackUp: to make kids want to start learning and to prepare themselves for the world that is about to present itself.")
+    st.caption("StackUp is for education, not personal financial advice.")
 done = len(st.session_state["completed"])
 total = len(lessons)
 fraction = done / total
