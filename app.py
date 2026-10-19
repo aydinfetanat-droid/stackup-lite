@@ -315,6 +315,15 @@ if tier_done("Analyst"):
     unlocked.append("Vice President")
 if tier_done("Vice President"):
     unlocked.append("Managing Director")
+def tier_counts(tier_name):
+    finished = 0
+    total = 0
+    for lesson in lessons:
+        if lesson["tier"] == tier_name:
+            total = total + 1
+            if lesson["title"] in st.session_state["completed"]:
+                finished = finished + 1
+    return finished,total
 def go_learn():
     st.session_state["page"] = "Learn"
 page = st.sidebar.radio("Go to", ["Home", "Learn", "About"], key="page")
@@ -340,6 +349,21 @@ if page == "Home":
         with st.container(border=True):
             st.markdown("**3. Level up**")
             st.write("Finish a tier to unlock the next one.")
+        st.divider()
+    st.subheader("Your path")
+    tiers = ["Analyst", "Vice President", "Managing Director"]
+    tier_cols = st.columns(3)
+    for i in range(len(tiers)):
+        with tier_cols[i]:
+            with st.container(border=True):
+                finished, total = tier_counts(tiers[i])
+                st.markdown("**" + tiers[i] + "**")
+                if tiers[i] in unlocked:
+                    st.caption("Unlocked")
+                else:
+                    st.caption("Locked: finish the tier before it")
+                st.progress(finished / total)
+                st.write(str(finished) + " of " + str(total) + " lessons")
 elif page == "Learn":
     st.title("Learn")
     tier_choice = st.selectbox("Choose a tier", unlocked)
