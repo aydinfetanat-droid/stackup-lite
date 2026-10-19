@@ -315,15 +315,31 @@ if tier_done("Analyst"):
     unlocked.append("Vice President")
 if tier_done("Vice President"):
     unlocked.append("Managing Director")
-page = st.sidebar.radio("Go to", ["Home", "Learn", "About"])
+def go_learn()
+    st.session_state["page"] = "Learn"
+page = st.sidebar.radio("Go to", ["Home", "Learn", "About"], key="page")
 demo = st.sidebar.checkbox("Demo mode: unlock all tiers")
 if demo:
     unlocked = ["Analyst", "Vice President", "Managing Director"]
 if page == "Home":
     st.title("StackUp Lite")
-    st.write("Financial literacy for teens, one tier at a time")
-    if st.button("Start Learning"):
-        st.write("Open Learn in the sidebar to start your first lesson")
+    st.subheader("Financial literacy for teens, one tier at a time.")
+    st.write("Short stories, real numbers, and quick quizzes that turn money basics into skills you can use.")
+    st.button("Start learning", on_click=go_learn, type="primary")
+    st.divider()
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        with st.container(border=True):
+            st.markdown("**1. Read**")
+            st.write("A short story with real numbers.")
+    with col2:
+        with st.container(border=True):
+            st.markdown("**2. Quiz**")
+            st.write("Five questions check what you learned.")
+    with col3:
+        with st.container(border=True):
+            st.markdown("**3. Level up**")
+            st.write("Finish a tier to unlock the next one.")
 elif page == "Learn":
     st.title("Learn")
     tier_choice = st.selectbox("Choose a tier", unlocked)
@@ -355,8 +371,10 @@ elif page == "Learn":
                             st.error("Question " + str(i + 1) + ": the answer is " + q["answer"])
                     st.write("You got " + str(score) + " out of " + str(len(lesson["quiz"])) + ".")
                     if score == len(lesson["quiz"]):
+                        st.balloons()
                         if lesson["title"] not in st.session_state["completed"]:
                             st.session_state["completed"].append(lesson["title"])
+                            st.toast("Lesson Complete! Progress Saved.")
             else:
                 st.write("Quiz coming soon.")
 else:
