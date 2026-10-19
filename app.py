@@ -315,7 +315,7 @@ if tier_done("Analyst"):
     unlocked.append("Vice President")
 if tier_done("Vice President"):
     unlocked.append("Managing Director")
-def go_learn()
+def go_learn():
     st.session_state["page"] = "Learn"
 page = st.sidebar.radio("Go to", ["Home", "Learn", "About"], key="page")
 demo = st.sidebar.checkbox("Demo mode: unlock all tiers")
