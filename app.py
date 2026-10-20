@@ -389,7 +389,10 @@ elif page == "Learn":
                     for q in lesson["quiz"]:
                         picked = st.radio(q["question"], q["options"], index=None, key=lesson["title"] + q["question"])
                         answers.append(picked)
-                    if st.button("Check answers", type="primary"):
+                    clicked = st.button("Check answers", type="primary")
+            if clicked and None in answers:
+                    st.warning("Answer every question first.")
+            elif clicked:
                         score = 0
                         for i in range(len(lesson["quiz"])):
                             q = lesson["quiz"][i]
