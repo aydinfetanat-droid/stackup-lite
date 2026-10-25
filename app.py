@@ -428,7 +428,7 @@ elif page == "Simulator":
         balances.append(money)
         flat.append(start)
         money = money * (1 + rate / 100)
-    st.write("Final balance: " + str(round(balances[-1])))
+    st.line_chart({"With growth": balances, "Kept in a jar": flat}, color=["#34D399", "#8FA0BC"])
     final = balances[-1]
     col1, col2, col3 = st.columns(3)
     col1.metric("Final balance", "$" + str(round(final)))
