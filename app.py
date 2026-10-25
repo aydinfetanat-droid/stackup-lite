@@ -424,10 +424,10 @@ elif page == "Simulator":
     balances = []
     flat = []
     money = start
-    for year in range(______ + 1):
-        balances.append(______)
-        flat.append(start)
-        money = money * (1 + ______ / 100)
+for year in range(______ + 1):
+    balances.append(______)
+    flat.append(start)
+    money = money * (1 + ______ / 100)
     st.write("Final balance: " + str(round(balances[-1])))
 else:
     st.title("About StackUp")
