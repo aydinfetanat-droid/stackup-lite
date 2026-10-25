@@ -421,7 +421,14 @@ elif page == "Simulator":
     start = st.slider("Starting amount in dollars", 100, 5000, 1000, step=100)
     rate = st.slider("Yearly growth in percent", 1, 12, 10)
     years = st.slider("Number of years", 1, 40, 20)
-    st.write("You picked " + str(start) + " at " + str(rate) + " percent for " + str(years) + " years.")
+    balances = []
+    flat = []
+    money = start
+    for year in range(______ + 1):
+        balances.append(______)
+        flat.append(start)
+        money = money * (1 + ______ / 100)
+    st.write("Final balance: " + str(round(balances[-1])))
 else:
     st.title("About StackUp")
     with st.container(border=True):
