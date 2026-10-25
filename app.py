@@ -429,6 +429,12 @@ elif page == "Simulator":
         flat.append(start)
         money = money * (1 + rate / 100)
     st.write("Final balance: " + str(round(balances[-1])))
+    final = balances[-1]
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Final balance", "$" + str(round(final)))
+    col2.metric("Growth earned", "$" + str(round(final - start)))
+    col3.metric("Years to double", str(round(72 / rate, 1)) + " years")
+    st.caption("Rule of 72: 72 divided by the yearly growth rate estimates how many years it takes money to double.")
 else:
     st.title("About StackUp")
     with st.container(border=True):
