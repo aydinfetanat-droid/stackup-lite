@@ -332,7 +332,7 @@ def tier_counts(tier_name):
     return finished,total
 def go_learn():
     st.session_state["page"] = "Learn"
-page = st.sidebar.radio("Go to", ["Home", "Learn", "About"], key="page")
+page = st.sidebar.radio("Go to", ["Home", "Learn", "Simulator", "About"], key="page")
 demo = st.sidebar.checkbox("Demo mode: unlock all tiers")
 if demo:
     unlocked = ["Analyst", "Vice President", "Managing Director"]
@@ -415,6 +415,13 @@ elif page == "Learn":
                                 st.toast("Lesson Complete! Progress Saved.")
             else:
                 st.write("Quiz coming soon.")
+elif page == "Simulator":
+    st.title("Money growth simulator")
+    st.caption("A hypothetical example, not a prediction. Real returns vary from year to year.")
+    start = st.slider("Starting amount in dollars", 100, 5000, 1000, step=100)
+    rate = st.slider("Yearly growth in percent", 1, 12, 10)
+    years = st.slider("Number of years", 1, 40, 20)
+    st.write("You picked " + str(start) + " at " + str(rate) + " percent for " + str(years) + " years.")
 else:
     st.title("About StackUp")
     with st.container(border=True):
